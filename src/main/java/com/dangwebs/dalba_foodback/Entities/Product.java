@@ -1,6 +1,7 @@
 package com.dangwebs.dalba_foodback.Entities;
 
 import jakarta.persistence.*;
+import lombok.NonNull;
 
 @Entity
 @Table(name = "product")
@@ -8,6 +9,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    @NonNull
     private String name;
     private String image;
     private Float price;
